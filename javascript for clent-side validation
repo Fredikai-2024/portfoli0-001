@@ -1,0 +1,19 @@
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+    var age = document. getElementById('age').value.trim();
+
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields.");
+        event.preventDefault();
+    } else if (!validateEmail(email)) {
+        alert("Please enter a valid email.");
+        event.preventDefault();
+    }
+});
+
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}

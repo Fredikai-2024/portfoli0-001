@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aa901a;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #941b1b;
+}
+
+/* Header with Image */
+header {
+    text-align: center;
+    background-color: #166119;
+    padding: 20px;
+}
+
+.portfolio-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    margin-bottom: 10px;
+}
+
+/* Vision and Mission Section */
+#vision-mission {
+    background-color: #3d4f61;
+    padding: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #c4bf7aea;
+}
+
+/* Skills Section */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #581d9b1e;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Projects Section */
+.project {
+    background-color: #64182b;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #804646;
+    border-radius: 8px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #662634;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #441955;
+    color: rgb(64, 30, 80);
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #8a3052;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+}
